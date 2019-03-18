@@ -1,0 +1,38 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+
+.header{
+    background-color: #ff8f00;
+    color: white;
+    display:flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ol li {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+   display: flex;
+   align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    height: inherit;
+}
