@@ -8,7 +8,7 @@ body{
     display:flex;
     height: 80px;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .header ol li {
@@ -107,6 +107,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* responsive*/
 }
 
 .hero-image {
@@ -157,7 +158,9 @@ figure{
     
 .container {
     /*border: 1px solid red;*/
-    width: 1000px;
+    max-width: 1000px; /*comienza RESPONSIVE*/
+    width: 100%; /*Responsive*/
+    flex: 1; /*toma todo el ancho disponible del elemento*/ 
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -172,6 +175,7 @@ figure{
     justify-content: space-between;
     height: 80px;
     /*align-items: center;*/
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -199,7 +203,7 @@ flex-wrap: wrap;
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .social-link {
     display: inline-block;
@@ -240,4 +244,35 @@ flex-wrap: wrap;
 
 .form-email h3 {
      font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header ol{
+    display: block;
+    }
+    .header ol li {
+        height: 50px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header .logo{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
 }
